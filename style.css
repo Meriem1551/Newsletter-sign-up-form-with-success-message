@@ -1,0 +1,175 @@
+@font-face {
+    font-family:Roboto1;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto2;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+:root{
+    /*colors*/
+--Tomato: hsl(4, 100%, 67%);
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+    /*fonts*/
+--font-size: 16px;
+--font-family1:Roboto1;
+--font-family2:Roboto2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Charcoal-Grey);
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.CONTAINER{
+    width: 770px;
+    height: 500px;
+    background-color: var(--White);
+    border-radius: 15px;
+    display: flex;
+    margin-top: 50px;
+}
+.CONTAINER.success{
+    visibility: hidden;
+}
+#card{
+    padding-top: 70px;
+    padding-left: 45px;
+    display: grid;
+}
+h1{
+font-family: var(--font-family2);
+color: var(--Dark-Slate-Grey);
+font-size: 3rem;;
+}
+#card>p{
+    font-family: var(--font-family1);
+    color: var(--Charcoal-Grey);
+    font-size: var(--font-size);
+    margin-top: -20px;
+    width: 400px;
+}
+ul{
+    margin-top: -20px;
+    color:var(--Charcoal-Grey) ;
+    font-family: var(--font-family1);
+    font-size: var(--font-size);
+}
+li{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.emailInput{
+    display: grid;
+    margin-top: -30px;
+}
+.emailInput label{
+    color: var(--Dark-Slate-Grey);
+    font-family: var(--font-family2);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+input{
+    margin-top: -19px;
+    width: 85%;
+    height: 40px;
+    border: 1.5px solid var(--Grey);
+    border-radius: 5px;
+}
+::placeholder{
+    color: var(--Grey);
+    font-family: var(--font-family1);
+    padding-left: 20px;
+}
+small{
+    font-family: var(--font-family2);
+    visibility: hidden;
+    color: var(--Tomato);
+    position: relative;
+    left: 240px;
+    top: -80px;
+}
+#subbutton{
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-family: var(--font-family2);
+    font-size: 14px;
+    height: 40px;
+    width: 85%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 70px;
+    margin-top: -25px;
+}
+#image>img{
+    width: 310px;
+    margin-top: 6.5%;
+
+}
+
+#subscribed{
+    width: 450px;
+    height: 430px;
+    background-color: var(--White);
+    border-radius: 20px;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+#subscribed>h1{
+    color: var(--Dark-Slate-Grey);
+    font-family: var(--font-family2);
+    line-height: 45px;
+    margin-top: 30px;
+}
+#subscribed>p{
+    color: var(--Charcoal-Grey);
+    font-family: var(--font-family1);
+    line-height:  23px;
+    margin-top: 20px;
+    width: 370px;
+    font-size: 15px;
+}
+span{
+    color: var(--Dark-Slate-Grey);
+    font-family: var(--font-family2);
+}
+#dismissButton{
+    height: 45px;
+    width: 80%;
+    color: var(--White);
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg,#FF527B,#FF6A3A);
+  padding-left: 105px;
+  padding-top: 12px;
+  margin-top: 25px;
+  box-shadow: 0px 10px  30px -2px var(--Tomato);
+}
+.emailInput.error input{
+    border-color:var(--Tomato);
+    background-color:hsl(4, 93%, 94%);
+    
+}
+.emailInput.error ::placeholder{
+    color:var(--Tomato) ;
+}
+.emailInput.error small{
+    visibility: visible;
+}
+.Dismiss-Button.success{
+    background-color: var(--Dark-Slate-Grey);
+}
