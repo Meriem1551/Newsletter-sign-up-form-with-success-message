@@ -10,6 +10,7 @@
 <body>
 <main>
   <div id="container" class="CONTAINER">
+    <img id="mobileImg"src="./assets/images/illustration-sign-up-mobile.svg" alt="mobileImage" width="100%">
     <div id="card">
       <h1>Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -19,7 +20,7 @@
         <li><img src="./assets/images/icon-list.svg">And much more!</li>
       </ul>
       <div id="email" class="emailInput ">
-        <label for="Email address" class="EmailAddress">Email address</label>
+        <label for="Email address">Email address</label>
         <input id="EMAIL" class="EMAILInput" type="email" placeholder="email@company.com">
         <small>error message</small>
       </div>
@@ -29,11 +30,12 @@
       <img src="./assets/images/illustration-sign-up-desktop.svg">
     </div>
   </div>
+  
   <div id="subscribed" class="SUBSCRIBED">
     <img src="./assets/images/icon-success.svg">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmtion email has been sent to <span >youremail@yourcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
-    <div id="dismissButton" class="Dismiss-Button success">Dismiss message</div>
+    <p>A confirmtion email has been sent to <span id="defaultMessage">youremail@yourcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    <div id="dismissButton" class="Dismiss-Button ">Dismiss message</div>
   </div>
 </main>
 <script src="./signup.js"></script>

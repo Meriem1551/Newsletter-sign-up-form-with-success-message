@@ -18,13 +18,14 @@
 --font-family1:Roboto1;
 --font-family2:Roboto2;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    height: 100vh;
+    width: 100vw;
     background-color: var(--Charcoal-Grey);
     display: grid;
     place-items: center;
@@ -36,20 +37,17 @@ body{
     background-color: var(--White);
     border-radius: 15px;
     display: flex;
-    margin-top: 50px;
+    margin-top: 5px;
 }
-.CONTAINER.success{
-    visibility: hidden;
+h1{
+    font-family: var(--font-family2);
+    color: var(--Dark-Slate-Grey);
+    font-size: 3rem;
 }
 #card{
     padding-top: 70px;
     padding-left: 45px;
     display: grid;
-}
-h1{
-font-family: var(--font-family2);
-color: var(--Dark-Slate-Grey);
-font-size: 3rem;;
 }
 #card>p{
     font-family: var(--font-family1);
@@ -104,6 +102,7 @@ small{
     color: var(--White);
     font-family: var(--font-family2);
     font-size: 14px;
+    cursor: pointer;
     height: 40px;
     width: 85%;
     border-radius: 5px;
@@ -114,9 +113,7 @@ small{
 #image>img{
     width: 310px;
     margin-top: 6.5%;
-
 }
-
 #subscribed{
     width: 450px;
     height: 430px;
@@ -128,7 +125,6 @@ small{
     padding-left: 50px;
     padding-top: 40px;
 }
-
 #subscribed>h1{
     color: var(--Dark-Slate-Grey);
     font-family: var(--font-family2);
@@ -170,6 +166,77 @@ span{
 .emailInput.error small{
     visibility: visible;
 }
+
 .Dismiss-Button.success{
     background-color: var(--Dark-Slate-Grey);
+    cursor: pointer;
+}
+#mobileImg{
+    display: none;
+}
+
+
+@media (max-width: 550px) {
+    body{
+        overflow-x: hidden;
+
+    }
+    #mobileImg{
+        display: block;
+         margin-top: -50px;
+    }
+    #image{
+        display: none;
+    }
+    .CONTAINER{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-top:-30px ;
+    }
+    #card{
+        height: 550px;
+        background-color: var(--White);
+    }
+    #card>p{
+        width: 350px;
+    }
+    ul{
+        width: 300px;
+    }
+    small{
+        position: relative;
+        left: 220px;
+        top: -80px;
+    }
+    #subbutton{
+        padding-left: 50px;
+    }
+    #subscribed{
+        width: 100%;
+        height: 145%;
+        border-radius: 0;
+        margin-top: -80px;
+        margin-left: -400px;
+        padding-left: 30px;
+        padding-top: 140px;
+    }
+    #subscribed>h1{
+       width: 200px;
+    }
+    #subscribed>p{
+        width: 300px;
+    }
+    #dismissButton{
+        background-image: none;
+      box-shadow: none;
+      background-color: var(--Dark-Slate-Grey);
+      padding-left: 150px;
+      margin-top: 310px;
+
+}
 }
