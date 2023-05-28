@@ -29,6 +29,6 @@ function putYourEmail(input){
 }
  function returnToFirstPage(){
    subscribedDiv.style.display="none";
-   containerDiv.style.display="flex";
+   containerDiv.style.display=" block";
  }
  
