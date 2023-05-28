@@ -15,6 +15,7 @@ function checkValidEmail(){
     subscribedDiv.style.display="block";
     containerDiv.style.display="none";
     putYourEmail(Email);
+    showSuccess(Email);
     DismissButton.addEventListener('click',returnToFirstPage);
  }
  }
@@ -26,6 +27,12 @@ function checkValidEmail(){
  }
 function putYourEmail(input){
    yourEmail.textContent=input.value;
+}
+function showSuccess(input){
+   const YourEmail=input.parentElement;
+    YourEmail.className='emailInput success';
+    const valid=YourEmail.querySelector('small');
+    valid.innerText='';
 }
  function returnToFirstPage(){
    subscribedDiv.style.display="none";

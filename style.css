@@ -158,13 +158,18 @@ span{
     background-color:hsl(4, 93%, 94%);
     
 }
+.emailInput.success input{
+    border-color: var(--Grey);
+}
 .emailInput.error ::placeholder{
     color:var(--Tomato) ;
 }
 .emailInput.error small{
     visibility: visible;
 }
-
+.emailInput.success small{
+    visibility: hidden;
+}
 .Dismiss-Button.success{
     background-color: var(--Dark-Slate-Grey);
     cursor: pointer;
@@ -188,7 +193,7 @@ span{
     }
     .CONTAINER{
         width: 100%;
-        height: 145%;
+        height: 100%;
         display: grid;
         margin-top: 50px;
     }
@@ -238,7 +243,8 @@ span{
         background-image: none;
       box-shadow: none;
       background-color: var(--Dark-Slate-Grey);
-      padding-left: 150px;
+      padding-left: 120px;
       margin-top: 310px;
+      width: 85%;
 }
 }
